@@ -32,6 +32,8 @@ dependencies:
   share: any
   connectivity: any
   path: any
+  flutter_bloc: ^8.1.4
+  equatable: ^2.0.5
 dev_dependencies:
   flutter_test:
     sdk: flutter

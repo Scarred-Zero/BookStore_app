@@ -1,6 +1,6 @@
 # bookstore_app
 
-BookStore_app is a cross-platform mobile application developed using Flutter. It allows users to access a wide range of books, both offline and online, with features such as search, bookmarking, preview mode, and more. This README.md file provides detailed information about the app, its features, setup instructions, and collaborators.
+BookStore_app is a cross-platform e-commerce mobile application developed using Flutter. It allows users to access a wide range of books, both offline and online, with features such as search, bookmarking, preview mode, and more. This README.md file provides detailed information about the app, its features, setup instructions, and collaborators.
 ## Getting Started
 
 This project is a starting point for a Flutter application.

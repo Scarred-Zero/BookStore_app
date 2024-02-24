@@ -5,6 +5,7 @@ import 'package:bookstore_app/providers/nyt.dart';
 import 'package:bookstore_app/screens/bookshelf_screen.dart';
 import 'package:bookstore_app/screens/freebookscreen.dart';
 import 'package:bookstore_app/screens/home_screen.dart';
+import 'package:bookstore_app/screens/product_list_screen.dart';
 import 'package:bookstore_app/screens/onboarding.dart';
 import 'package:bookstore_app/screens/paidscreen.dart';
 import 'package:bookstore_app/screens/search_screen.dart';
@@ -31,7 +32,7 @@ class BookStoreApp extends StatelessWidget {
       DeviceOrientation.portraitUp,
       DeviceOrientation.portraitDown,
     ]);
-    // PROVIDERS TO MANAGE THE STAE OF THE LISTED BELOW
+    // PROVIDERS TO MANAGE THE STATE OF THE LISTED BELOW
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
@@ -62,6 +63,7 @@ class BookStoreApp extends StatelessWidget {
           BookShelfScreen.routeName: (context) => const BookShelfScreen(),
           SpecificSearchScreen.routeName: (context) =>
               const SpecificSearchScreen(),
+          ProductListScreen.routeName: (context) => const ProductListScreen(),
           PaidBookScreen.routeName: (context) => const PaidBookScreen(),
           FreeBookScreen.routeName: (context) => const FreeBookScreen(),
           onBoardingScreen.routeName: (context) => const onBoardingScreen(),

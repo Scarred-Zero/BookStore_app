@@ -37,7 +37,7 @@ class _NavBarState extends State<NavBar> {
                 Radius.circular(15),
               ),
             ),
-            color: Color.fromARGB(255, 67, 91, 139),
+            color: const Color.fromARGB(255, 67, 91, 139),
             elevation: 0,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -86,8 +86,8 @@ class NavbarButton extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 4.0),
               child: SizedBox(
-                width: 25,
-                height: 25,
+                width: 20,
+                height: 20,
                 child: Image.asset(
                   icon,
                   scale: 1.0,
@@ -100,7 +100,7 @@ class NavbarButton extends StatelessWidget {
                 label,
                 style: GoogleFonts.montserrat(
                   textStyle: const TextStyle(
-                      fontSize: 11,
+                      fontSize: 10,
                       fontWeight: FontWeight.w600,
                       color: Color.fromARGB(255, 245, 249, 253)),
                 ),

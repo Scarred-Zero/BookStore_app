@@ -3,6 +3,7 @@ import 'package:bookstore_app/providers/nyt.dart';
 import 'package:bookstore_app/widgets/app_title.dart';
 import 'package:bookstore_app/widgets/categoriesWidgets/categories_section.dart';
 import 'package:bookstore_app/widgets/navbar.dart';
+import 'package:bookstore_app/screens/product_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -55,8 +56,26 @@ class _HomeScreenState extends State<HomeScreen> {
                           textStyle: const TextStyle(
                               fontSize: 25,
                               fontWeight: FontWeight.w700,
-                              color: Color.fromARGB(255, 1, 7, 15)))),
+                              color: Color(0xFFF37814)))),
                 ),
+                Container(
+                  margin: const EdgeInsets.only(left: 150.0),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFF37814),
+                    borderRadius: BorderRadius.circular(13),
+                    boxShadow: const [
+                      BoxShadow(
+                        offset: Offset(0, 15),
+                        blurRadius: 7,
+                        spreadRadius: -8,
+                        color: Color(0xFF131E32),
+                      ),
+                    ],
+                  ),
+                  child: IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.shopping_cart_outlined)),
+                )
               ],
             ),
             SingleChildScrollView(
@@ -78,7 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           textStyle: const TextStyle(
                               fontSize: 25,
                               fontWeight: FontWeight.w700,
-                              color: Color.fromARGB(255, 1, 7, 15)))),
+                              color: Color(0xFFF37814)))),
                 ),
               ],
             ),
