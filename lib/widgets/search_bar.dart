@@ -30,7 +30,7 @@ class _SearchBarState extends State<SearchBars> {
     return Card(
       elevation: 0,
       shadowColor: Colors.black,
-      color: const Color(0xFF1E2F4D),
+      color: Color.fromARGB(255, 71, 96, 141),
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.all(
           Radius.circular(50),
@@ -70,7 +70,7 @@ class _SearchBarState extends State<SearchBars> {
                   const SizedBox(
                       height: 56,
                       child: VerticalDivider(
-                        color: Color(0xFF131E32),
+                        color: Color(0xFFFE9E3A),
                         width: 0,
                       )),
                   GestureDetector(
@@ -99,7 +99,7 @@ class _SearchBarState extends State<SearchBars> {
               const SizedBox(
                   height: 56,
                   child: VerticalDivider(
-                    color: Color(0xFF131E32),
+                    color: Color(0xFFFE9E3A),
                     width: 0,
                   )),
               Expanded(
@@ -108,7 +108,7 @@ class _SearchBarState extends State<SearchBars> {
                   padding: const EdgeInsets.only(left: 8.0),
                   child: TextField(
                     autofocus: true,
-                    cursorColor: Colors.grey,
+                    cursorColor: Colors.white,
                     decoration: const InputDecoration(
                             contentPadding: EdgeInsets.symmetric(
                                 horizontal: 2.0, vertical: 4.0),

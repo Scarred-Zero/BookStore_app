@@ -32,11 +32,11 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF4A6496),
+      backgroundColor: Color.fromARGB(255, 63, 84, 111),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: const NavBar(HomeScreen.routeName),
       body: RefreshIndicator(
-        color: const Color.fromARGB(255, 58, 149, 254),
+        color: const Color(0xFF3A95FE),
         backgroundColor: Colors.white,
         displacement: 80,
         onRefresh: () async {
@@ -56,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           textStyle: const TextStyle(
                               fontSize: 25,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xFFF37814)))),
+                              color: Color(0xFFFCF9F7)))),
                 ),
                 Container(
                   margin: const EdgeInsets.only(left: 150.0),
@@ -73,7 +73,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                   child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        ProductListScreen.routeName;
+                      },
                       icon: const Icon(Icons.shopping_cart_outlined)),
                 )
               ],
@@ -97,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           textStyle: const TextStyle(
                               fontSize: 25,
                               fontWeight: FontWeight.w700,
-                              color: Color(0xFFF37814)))),
+                              color: Color(0xFFFCF9F7)))),
                 ),
               ],
             ),

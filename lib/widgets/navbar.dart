@@ -37,7 +37,7 @@ class _NavBarState extends State<NavBar> {
                 Radius.circular(15),
               ),
             ),
-            color: const Color.fromARGB(255, 67, 91, 139),
+            color: Color.fromARGB(255, 0, 3, 10),
             elevation: 0,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -46,11 +46,11 @@ class _NavBarState extends State<NavBar> {
                   NavbarButton('assets/images/bookmark.png', 'Bookmark',
                       BookShelfScreen.routeName, widget.currentRoute),
                 if (openNav)
-                  NavbarButton('assets/images/estate.png', 'Home',
-                      HomeScreen.routeName, widget.currentRoute),
-                if (openNav)
                   NavbarButton('assets/images/loupe.png', 'Search',
                       SearchScreen.routeName, widget.currentRoute),
+                if (openNav)
+                  NavbarButton('assets/images/estate.png', 'Home',
+                      HomeScreen.routeName, widget.currentRoute),
                 if (openNav)
                   NavbarButton('assets/images/paid.png', 'Paid',
                       PaidBookScreen.routeName, widget.currentRoute),

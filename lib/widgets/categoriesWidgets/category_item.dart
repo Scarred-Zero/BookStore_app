@@ -38,7 +38,7 @@ class _CategoryItemState extends State<CategoryItem> {
     return Container(
       // padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 237, 239, 241),
+        color: Color(0xFF202F4D),
         borderRadius: BorderRadius.circular(13),
         boxShadow: const [
           BoxShadow(
@@ -123,7 +123,7 @@ class _FreeItemState extends State<FreeItem> {
     return Container(
       // padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 252, 252, 253),
+        color: const Color(0xFF202F4D),
         borderRadius: BorderRadius.circular(13),
         boxShadow: const [
           BoxShadow(

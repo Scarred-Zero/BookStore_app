@@ -1,8 +1,9 @@
-import 'package:bookstore_app/models/product.dart';
 import 'package:flutter/material.dart';
+import 'package:bookstore_app/models/product.dart';
 
 class ProductListScreen extends StatelessWidget {
   static const routeName = '/product-list-screen';
+
   const ProductListScreen({super.key});
 
   @override
