@@ -3,16 +3,16 @@
 import 'package:bookstore_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
-class onBoardingScreen extends StatefulWidget {
+class OnBoardingScreen extends StatefulWidget {
   static const routeName = '/onboard-screen';
 
-  const onBoardingScreen({super.key});
+  const OnBoardingScreen({super.key});
 
   @override
-  State<onBoardingScreen> createState() => _onBoardingScreen();
+  State<OnBoardingScreen> createState() => _onBoardingScreen();
 }
 
-class _onBoardingScreen extends State<onBoardingScreen> {
+class _onBoardingScreen extends State<OnBoardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

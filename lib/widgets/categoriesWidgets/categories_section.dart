@@ -51,6 +51,10 @@ class FreesiteSection extends StatelessWidget {
         logoUrl:
             'https://infosoup.info/wp-content/uploads/2022/01/libby-logo.png'),
     SiteCategories(
+        name: 'Romance e-books',
+        url: 'https://www.smashwords.com/shelves/home/1235/free/any',
+        logoUrl: 'https://www.smashwords.com/static/img/favicon.ico'),
+    SiteCategories(
         name: 'Open Culture',
         url: 'http://www.openculture.com',
         logoUrl:
@@ -61,46 +65,38 @@ class FreesiteSection extends StatelessWidget {
         logoUrl:
             'https://icon-library.com/images/book-icon-transparent/book-icon-transparent-27.jpg'),
     SiteCategories(
-        name: 'FullBooks.com',
-        url: 'http://www.fullbooks.com',
+        name: 'Openlibrary.org',
+        url: 'https://openlibrary.org/',
         logoUrl:
-            'https://www.freeiconspng.com/uploads/book-icon-black-good-galleries--24.jpg'),
-    SiteCategories(
-        name: 'Classic Bookshelf',
-        url: 'http://www.classicbookshelf.com',
-        logoUrl: 'https://example.com/classic_bookshelf_logo.png'),
-    SiteCategories(
-        name: 'Literature Project',
-        url: 'http://www.literatureproject.com',
-        logoUrl: 'https://example.com/literature_project_logo.png'),
-    SiteCategories(
-        name: 'BookBoon',
-        url: 'http://bookboon.com',
-        logoUrl: 'https://example.com/bookboon_logo.png'),
-    SiteCategories(
-        name: 'E-Books Directory',
-        url: 'http://www.e-booksdirectory.com',
-        logoUrl: 'https://example.com/e-books_directory_logo.png'),
-    SiteCategories(
-        name: 'The Library of Congress',
-        url: 'https://www.loc.gov',
-        logoUrl: 'https://example.com/library_of_congress_logo.png'),
-    SiteCategories(
-        name: 'OnlineProgrammingBooks',
-        url: 'http://www.onlineprogrammingbooks.com',
-        logoUrl: 'https://example.com/online_programming_books_logo.png'),
-    SiteCategories(
-        name: 'Learn Library',
-        url: 'https://learnlibrary.com',
-        logoUrl: 'https://example.com/learn_library_logo.png'),
+            'https://openlibrary.org/static/images/openlibrary-128x128.png'),
     SiteCategories(
         name: 'ManyBooks.net',
-        url: 'http://manybooks.net',
-        logoUrl: 'https://example.com/manybooks_net_logo.png'),
+        url: 'https://manybooks.net/',
+        logoUrl: 'https://manybooks.net/themes/custom/mnybks/favicon.ico'),
     SiteCategories(
-        name: 'FreeBookSpot',
-        url: 'http://www.freebookspot.es',
-        logoUrl: 'https://example.com/freebookspot_logo.png')
+        name: 'Gutenberg.org',
+        url: 'https://www.gutenberg.org/',
+        logoUrl: 'https://www.gutenberg.org/gutenberg/pg-logo-129x80.png'),
+    SiteCategories(
+        name: 'Feedbooks.com',
+        url: 'https://www.feedbooks.com/',
+        logoUrl: 'https://www.feedbooks.com/favicon.ico'),
+    SiteCategories(
+        name: 'Free-ebooks.net',
+        url: 'https://www.free-ebooks.net/',
+        logoUrl: 'https://www.free-ebooks.net/favicon-16x16.png?v=2b0OeXpMNw'),
+    SiteCategories(
+        name: 'Ebooks.com',
+        url: 'https://www.ebooks.com/en-sg/',
+        logoUrl: 'https://www.ebooks.com/icon-128x128.png'),
+    SiteCategories(
+        name: 'OnlineProgrammingBooks',
+        url: 'https://www.oreilly.com/',
+        logoUrl: 'https://www.oreilly.com/favicon.ico'),
+    SiteCategories(
+        name: 'Tutorialspoint for programming',
+        url: 'https://www.tutorialspoint.com/',
+        logoUrl: 'https://www.tutorialspoint.com/images/favicon-16x16.png'),
   ];
 
   FreesiteSection({super.key});
@@ -122,7 +118,7 @@ class FreesiteSection extends StatelessWidget {
                 crossAxisCount: 3,
                 mainAxisSpacing: 15.0,
                 crossAxisSpacing: 15.0,
-                childAspectRatio: .85,
+                childAspectRatio: .90,
               ),
               itemBuilder: (context, i) => FreeItem(freebooksiteslist[i]),
             ),

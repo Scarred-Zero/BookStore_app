@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen>
 
     // WAIT FOR 3 SECONDS TO NAVIGATE TO THE HOME SCREEN
     Timer(const Duration(seconds: 3), () {
-      Navigator.of(context).pushReplacementNamed(onBoardingScreen.routeName);
+      Navigator.of(context).pushReplacementNamed(OnBoardingScreen.routeName);
     });
 
     // START THE ANIMATION AFTER THE WIDGET IS FULLY BUILT

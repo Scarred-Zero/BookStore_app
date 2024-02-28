@@ -1,9 +1,9 @@
 import 'dart:math';
 import 'package:bookstore_app/providers/books.dart';
-import 'package:bookstore_app/screens/bookshelf_screen.dart';
-import 'package:bookstore_app/screens/freebookscreen.dart';
+import 'package:bookstore_app/screens/wish_list_screen.dart';
+import 'package:bookstore_app/screens/free_book_screen.dart';
 import 'package:bookstore_app/screens/home_screen.dart';
-import 'package:bookstore_app/screens/paidscreen.dart';
+import 'package:bookstore_app/screens/paid_screen.dart';
 import 'package:bookstore_app/screens/search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -37,14 +37,14 @@ class _NavBarState extends State<NavBar> {
                 Radius.circular(15),
               ),
             ),
-            color: Color.fromARGB(255, 0, 3, 10),
+            color: const Color.fromARGB(255, 0, 3, 10),
             elevation: 0,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 if (openNav)
-                  NavbarButton('assets/images/bookmark.png', 'Bookmark',
-                      BookShelfScreen.routeName, widget.currentRoute),
+                  NavbarButton('assets/images/wishlist.png', 'Wishlist',
+                      WishListScreen.routeName, widget.currentRoute),
                 if (openNav)
                   NavbarButton('assets/images/loupe.png', 'Search',
                       SearchScreen.routeName, widget.currentRoute),

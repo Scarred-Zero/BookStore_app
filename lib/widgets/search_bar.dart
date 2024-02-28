@@ -30,7 +30,7 @@ class _SearchBarState extends State<SearchBars> {
     return Card(
       elevation: 0,
       shadowColor: Colors.black,
-      color: Color.fromARGB(255, 71, 96, 141),
+      color: const Color.fromARGB(255, 71, 96, 141),
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.all(
           Radius.circular(50),

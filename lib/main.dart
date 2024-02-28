@@ -2,12 +2,13 @@ import 'package:bookstore_app/providers/books.dart';
 import 'package:bookstore_app/providers/bookshelf.dart';
 import 'package:bookstore_app/providers/categories.dart';
 import 'package:bookstore_app/providers/nyt.dart';
-import 'package:bookstore_app/screens/bookshelf_screen.dart';
-import 'package:bookstore_app/screens/freebookscreen.dart';
+import 'package:bookstore_app/screens/admin_panel_screen.dart';
+import 'package:bookstore_app/screens/wish_list_screen.dart';
+import 'package:bookstore_app/screens/free_book_screen.dart';
 import 'package:bookstore_app/screens/home_screen.dart';
 import 'package:bookstore_app/screens/product_list_screen.dart';
 import 'package:bookstore_app/screens/onboarding.dart';
-import 'package:bookstore_app/screens/paidscreen.dart';
+import 'package:bookstore_app/screens/paid_screen.dart';
 import 'package:bookstore_app/screens/search_screen.dart';
 import 'package:bookstore_app/screens/specific_search_screen.dart';
 import 'package:bookstore_app/screens/splashscreen.dart';
@@ -60,13 +61,14 @@ class BookStoreApp extends StatelessWidget {
         // USING OF NAMED ROUTE FOR NAVIGATING BETWEEN SCREENS
         routes: {
           SearchScreen.routeName: (context) => const SearchScreen(),
-          BookShelfScreen.routeName: (context) => const BookShelfScreen(),
+          WishListScreen.routeName: (context) => const WishListScreen(),
           SpecificSearchScreen.routeName: (context) =>
               const SpecificSearchScreen(),
           ProductListScreen.routeName: (context) => const ProductListScreen(),
           PaidBookScreen.routeName: (context) => const PaidBookScreen(),
           FreeBookScreen.routeName: (context) => const FreeBookScreen(),
-          onBoardingScreen.routeName: (context) => const onBoardingScreen(),
+          AdminPanelScreen.routeName: (context) => const AdminPanelScreen(),
+          OnBoardingScreen.routeName: (context) => const OnBoardingScreen(),
           HomeScreen.routeName: (context) => const HomeScreen(),
           SplashScreen.routeName: (context) => const SplashScreen(),
         },

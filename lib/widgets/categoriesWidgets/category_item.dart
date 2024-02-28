@@ -38,12 +38,12 @@ class _CategoryItemState extends State<CategoryItem> {
     return Container(
       // padding: EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Color(0xFF202F4D),
+        color: const Color(0xFF202F4D),
         borderRadius: BorderRadius.circular(13),
         boxShadow: const [
           BoxShadow(
             offset: Offset(0, 15),
-            blurRadius: 7,
+            blurRadius: 3,
             spreadRadius: -7,
             color: Color(0xFF131E32),
           ),
@@ -58,8 +58,8 @@ class _CategoryItemState extends State<CategoryItem> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                width: 40,
-                height: 40,
+                width: 45,
+                height: 45,
                 child: Image.asset(
                   widget.category.iconLink,
                   scale: 1.0,
@@ -128,8 +128,8 @@ class _FreeItemState extends State<FreeItem> {
         boxShadow: const [
           BoxShadow(
             offset: Offset(0, 15),
-            blurRadius: 7,
-            spreadRadius: -7,
+            blurRadius: 4,
+            spreadRadius: -8,
             color: Color(0xFF131E32),
           ),
         ],
@@ -145,7 +145,7 @@ class _FreeItemState extends State<FreeItem> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                width: 40,
+                width: 60,
                 height: 40,
                 child: Image.network(
                   widget.freesites.logoUrl,
@@ -161,7 +161,7 @@ class _FreeItemState extends State<FreeItem> {
                   softWrap: true,
                   style: GoogleFonts.montserrat(
                       textStyle: const TextStyle(
-                    fontSize: 18.0,
+                    fontSize: 20.0,
                     fontWeight: FontWeight.bold,
                     color: Color.fromARGB(255, 58, 149, 254),
                     // letterSpacing: 2,

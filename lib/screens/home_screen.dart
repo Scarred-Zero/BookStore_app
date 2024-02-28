@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 63, 84, 111),
+      backgroundColor: const Color.fromARGB(255, 63, 84, 111),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: const NavBar(HomeScreen.routeName),
       body: RefreshIndicator(
@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Container(
                   margin: const EdgeInsets.only(left: 150.0),
                   decoration: BoxDecoration(
-                    color: const Color(0xFFF37814),
+                    color: const Color.fromRGBO(253, 120, 20, 1),
                     borderRadius: BorderRadius.circular(13),
                     boxShadow: const [
                       BoxShadow(

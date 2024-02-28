@@ -5,22 +5,22 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class BookShelfScreen extends StatefulWidget {
+class WishListScreen extends StatefulWidget {
   static const routeName = '/bookshelf';
 
-  const BookShelfScreen({super.key});
+  const WishListScreen({super.key});
 
   @override
-  _BookShelfScreenState createState() => _BookShelfScreenState();
+  _WishListScreenState createState() => _WishListScreenState();
 }
 
-class _BookShelfScreenState extends State<BookShelfScreen> {
+class _WishListScreenState extends State<WishListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF131E32),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: const NavBar(BookShelfScreen.routeName),
+      floatingActionButton: const NavBar(WishListScreen.routeName),
       body: RefreshIndicator(
         onRefresh: () async {
           setState(() {});
@@ -51,7 +51,7 @@ class _BookShelfScreenState extends State<BookShelfScreen> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: <Widget>[
                               Text(
-                                'Bookshelf',
+                                'WishList',
                                 textAlign: TextAlign.end,
                                 style: GoogleFonts.montserrat(
                                     textStyle: const TextStyle(
@@ -112,13 +112,13 @@ class EmptyBookshelfWidget extends StatelessWidget {
             ),
             WidgetSpan(
               child: Icon(
-                Icons.bookmark_border,
+                Icons.favorite_border,
                 size: 18,
                 color: Colors.grey,
               ),
             ),
             TextSpan(
-              text: " to add books to the bookshelf",
+              text: " to add books to your wishlist",
               style: TextStyle(color: Colors.grey, fontSize: 16),
             ),
           ],
