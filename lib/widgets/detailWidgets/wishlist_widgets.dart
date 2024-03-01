@@ -22,7 +22,8 @@ class _BookmarkState extends State<Bookmark> {
       builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
         return IconButton(
           icon: Icon(
-              snapshot.data == true ? Icons.bookmark : Icons.bookmark_border),
+            snapshot.data == true ? Icons.favorite : Icons.favorite_border,
+          ),
           color: const Color(0xFFFE9E3A),
           iconSize: 32,
           onPressed: snapshot.data == true

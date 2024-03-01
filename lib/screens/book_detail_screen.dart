@@ -1,7 +1,7 @@
 import 'package:bookstore_app/models/book.dart';
 import 'package:bookstore_app/services/utils.dart';
 import 'package:bookstore_app/widgets/detailWidgets/book_details_widget.dart';
-import 'package:bookstore_app/widgets/detailWidgets/bookmark_widget.dart';
+import 'package:bookstore_app/widgets/detailWidgets/wishlist_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:share/share.dart';
 

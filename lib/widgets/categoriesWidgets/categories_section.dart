@@ -60,19 +60,19 @@ class FreesiteSection extends StatelessWidget {
         logoUrl:
             'https://cdn.icon-icons.com/icons2/2699/PNG/512/openculture_logo_icon_170890.png'),
     SiteCategories(
-        name: 'Forgotten Books',
-        url: 'https://www.forgottenbooks.com',
-        logoUrl:
-            'https://icon-library.com/images/book-icon-transparent/book-icon-transparent-27.jpg'),
+        name: 'ManyBooks.net',
+        url: 'https://manybooks.net/',
+        logoUrl: 'https://manybooks.net/themes/custom/mnybks/favicon.ico'),
     SiteCategories(
         name: 'Openlibrary.org',
         url: 'https://openlibrary.org/',
         logoUrl:
             'https://openlibrary.org/static/images/openlibrary-128x128.png'),
     SiteCategories(
-        name: 'ManyBooks.net',
-        url: 'https://manybooks.net/',
-        logoUrl: 'https://manybooks.net/themes/custom/mnybks/favicon.ico'),
+        name: 'Forgotten Books',
+        url: 'https://www.forgottenbooks.com',
+        logoUrl:
+            'https://icon-library.com/images/book-icon-transparent/book-icon-transparent-27.jpg'),
     SiteCategories(
         name: 'Gutenberg.org',
         url: 'https://www.gutenberg.org/',

@@ -1,9 +1,10 @@
 import 'dart:async';
 import 'package:bookstore_app/providers/nyt.dart';
+import 'package:bookstore_app/screens/admin_panel_screen.dart';
 import 'package:bookstore_app/widgets/app_title.dart';
 import 'package:bookstore_app/widgets/categoriesWidgets/categories_section.dart';
 import 'package:bookstore_app/widgets/navbar.dart';
-import 'package:bookstore_app/screens/product_list_screen.dart';
+import 'package:bookstore_app/widgets/admin_panel.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -12,6 +13,8 @@ class HomeScreen extends StatefulWidget {
   static const routeName = '/home';
 
   const HomeScreen({super.key});
+
+  String get currentRoute => AdminPanelScreen.routeName;
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -32,7 +35,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 63, 84, 111),
+      backgroundColor: const Color.fromARGB(255, 51, 64, 82),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      // floatingActionButton: const AdminPanel(HomeScreen.routeName),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: const NavBar(HomeScreen.routeName),
       body: RefreshIndicator(
@@ -44,6 +49,29 @@ class _HomeScreenState extends State<HomeScreen> {
         },
         child: Column(
           children: <Widget>[
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.start,
+            //   children: [
+            //     Container(
+            //       margin: const EdgeInsets.fromLTRB(20.0, 30.0, 0, 0.0),
+            //       width: 50,
+            //       height: 50,
+            //       decoration: BoxDecoration(
+            //         color: const Color.fromARGB(255, 0, 3, 10),
+            //         borderRadius: BorderRadius.circular(10),
+            //       ),
+            //       child: GestureDetector(
+            //         child: const Icon(
+            //           Icons.person,
+            //           color: Color(0xFFFE9E3A),
+            //         ),
+            //         onTap: () {
+            //           const AdminPanelScreen();
+            //         },
+            //       ),
+            //     ),
+            //   ],
+            // ),
             const AppTitle(),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -58,26 +86,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               fontWeight: FontWeight.w700,
                               color: Color(0xFFFCF9F7)))),
                 ),
-                Container(
-                  margin: const EdgeInsets.only(left: 150.0),
-                  decoration: BoxDecoration(
-                    color: const Color.fromRGBO(253, 120, 20, 1),
-                    borderRadius: BorderRadius.circular(13),
-                    boxShadow: const [
-                      BoxShadow(
-                        offset: Offset(0, 15),
-                        blurRadius: 7,
-                        spreadRadius: -8,
-                        color: Color(0xFF131E32),
-                      ),
-                    ],
-                  ),
-                  child: IconButton(
-                      onPressed: () {
-                        ProductListScreen.routeName;
-                      },
-                      icon: const Icon(Icons.shopping_cart_outlined)),
-                )
               ],
             ),
             SingleChildScrollView(

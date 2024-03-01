@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Constants {
-  static const double kPadding = 10.0;
-  static const Color purpleLight = Color(0XFF1e224c);
-  static const Color purpleDark = Color(0XFF0d193e);
-  static const Color orange = Color(0XFFec8d2f);
-  static const Color red = Color(0XFFf44336);
-}
+const primaryColor = Color(0xFF2697FF);
+const secondaryColor = Color(0xFF2A2D3E);
+const bgColor = Color(0xFF212332);
+
+const defaultPadding = 16.0;

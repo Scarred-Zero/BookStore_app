@@ -76,7 +76,7 @@ class _SearchScreenState extends State<SearchScreen> {
                                 style: GoogleFonts.montserrat(
                                   textStyle: const TextStyle(
                                     color: Colors.white,
-                                    fontSize: 15.0,
+                                    fontSize: 13.0,
                                     fontWeight: FontWeight.normal,
                                   ),
                                 ),

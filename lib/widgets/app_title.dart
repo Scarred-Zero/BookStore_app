@@ -9,7 +9,7 @@ class AppTitle extends StatelessWidget {
     return Container(
       height: 150,
       width: double.infinity,
-      margin: const EdgeInsets.symmetric(vertical: 40, horizontal: 10),
+      margin: const EdgeInsets.symmetric(vertical: 30, horizontal: 10),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(13),
           image: const DecorationImage(
