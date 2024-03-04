@@ -77,13 +77,11 @@ The app integrates with the Google API to interact with the SQL database, especi
 
 The following emails have been added as collaborators to the project:
 
-- [danemmanuel441@gmail.com](#collaborators)
 - [onyiauche736@gmail.com](#collaborators)
-- [dodickson67@gmail.com](#collaborators)
-- [Ibehcharlton5@gmail.com](#collaborators)
 - [meze82778@gmail.com](#collaborators)
 - [abahojomacynthia@gmail.com](#collaborators)
-- [amy1234obetta@gmail.com](#collaborators)
+- [danemmanuel441@gmail.com](#collaborators)
+
 
 ## Installation
 

@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:bookstore_app/providers/books.dart';
+import 'package:bookstore_app/screens/admin_panel_screen.dart';
 import 'package:bookstore_app/screens/wish_list_screen.dart';
 import 'package:bookstore_app/screens/free_book_screen.dart';
 import 'package:bookstore_app/screens/home_screen.dart';
@@ -43,20 +44,23 @@ class _NavBarState extends State<NavBar> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 if (openNav)
-                  NavbarButton('assets/images/wishlist.png', 'Wishlist',
-                      WishListScreen.routeName, widget.currentRoute),
+                  NavbarButton('assets/images/estate.png', 'Home',
+                      HomeScreen.routeName, widget.currentRoute),
                 if (openNav)
                   NavbarButton('assets/images/loupe.png', 'Search',
                       SearchScreen.routeName, widget.currentRoute),
                 if (openNav)
-                  NavbarButton('assets/images/estate.png', 'Home',
-                      HomeScreen.routeName, widget.currentRoute),
+                  NavbarButton('assets/images/wishlist.png', 'Wishlist',
+                      WishListScreen.routeName, widget.currentRoute),
                 if (openNav)
                   NavbarButton('assets/images/paid.png', 'Paid',
                       PaidBookScreen.routeName, widget.currentRoute),
                 if (openNav)
                   NavbarButton('assets/images/free.png', 'Free',
                       FreeBookScreen.routeName, widget.currentRoute),
+                if (openNav)
+                  NavbarButton('assets/images/user.png', 'Admin',
+                      AdminPanelScreen.routeName, widget.currentRoute),
               ],
             ),
           ),

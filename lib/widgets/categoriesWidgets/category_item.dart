@@ -139,14 +139,14 @@ class _FreeItemState extends State<FreeItem> {
           Utils.launchURL(widget.freesites.url);
         },
         child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 15),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
-                width: 60,
-                height: 40,
+                width: 50,
+                height: 30,
                 child: Image.network(
                   widget.freesites.logoUrl,
                   scale: 1.0,
