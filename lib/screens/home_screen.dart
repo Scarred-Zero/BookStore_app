@@ -10,10 +10,7 @@ import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
   static const routeName = '/home';
-
   const HomeScreen({super.key});
-
-  // String get currentRoute => AdminPanelScreen.routeName;
   String get currentRoute => AdminPanelScreen.routeName;
   @override
   _HomeScreenState createState() => _HomeScreenState();
