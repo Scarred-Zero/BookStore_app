@@ -1,6 +1,5 @@
-import 'package:bookstore_app/controllers/MenuAppController.dart';
+import 'package:bookstore_app/controllers/menu_app_controller.dart';
 import 'package:bookstore_app/responsive.dart';
-import 'package:bookstore_app/screens/admin_panel_screen.dart';
 import 'package:bookstore_app/widgets/navbar.dart';
 import 'package:bookstore_app/screens/dashboard/dashboard_screen.dart';
 import 'package:flutter/material.dart';
@@ -8,8 +7,9 @@ import 'package:provider/provider.dart';
 
 import 'components/side_menu.dart';
 
-class MainScreen extends StatelessWidget {
-  const MainScreen({super.key});
+class AdminPanelScreen extends StatelessWidget {
+  static const routeName = '/admin-panel-screen';
+  const AdminPanelScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class MainScreen extends StatelessWidget {
                 // and it takes 1/6 part of the screen
                 child: SideMenu(),
               ),
-            Expanded(
+            const Expanded(
               // It takes 5/6 part of the screen
               flex: 5,
               child: DashboardScreen(),
@@ -38,5 +38,6 @@ class MainScreen extends StatelessWidget {
         ),
       ),
     );
+    // );
   }
 }

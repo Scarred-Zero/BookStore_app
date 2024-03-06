@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:bookstore_app/providers/nyt.dart';
-import 'package:bookstore_app/screens/admin_panel_screen.dart';
+import 'package:bookstore_app/screens/admin/admin_panel_screen.dart';
 import 'package:bookstore_app/widgets/app_title.dart';
 import 'package:bookstore_app/widgets/categoriesWidgets/categories_section.dart';
 import 'package:bookstore_app/widgets/navbar.dart';
@@ -13,6 +13,7 @@ class HomeScreen extends StatefulWidget {
 
   const HomeScreen({super.key});
 
+  // String get currentRoute => AdminPanelScreen.routeName;
   String get currentRoute => AdminPanelScreen.routeName;
   @override
   _HomeScreenState createState() => _HomeScreenState();

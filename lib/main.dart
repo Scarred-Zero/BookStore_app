@@ -2,7 +2,8 @@ import 'package:bookstore_app/providers/books.dart';
 import 'package:bookstore_app/providers/bookshelf.dart';
 import 'package:bookstore_app/providers/categories.dart';
 import 'package:bookstore_app/providers/nyt.dart';
-import 'package:bookstore_app/screens/admin_panel_screen.dart';
+import 'package:bookstore_app/controllers/menu_app_controller.dart';
+import 'package:bookstore_app/screens/admin/admin_panel_screen.dart';
 import 'package:bookstore_app/screens/wish_list_screen.dart';
 import 'package:bookstore_app/screens/free_book_screen.dart';
 import 'package:bookstore_app/screens/home_screen.dart';
@@ -12,6 +13,8 @@ import 'package:bookstore_app/screens/paid_screen.dart';
 import 'package:bookstore_app/screens/search_screen.dart';
 import 'package:bookstore_app/screens/specific_search_screen.dart';
 import 'package:bookstore_app/screens/splashscreen.dart';
+import 'package:bookstore_app/constants.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:bookstore_app/services/connectivity_service.dart';
 import 'package:bookstore_app/services/connectivity_status.dart';
 import 'package:flutter/material.dart';
@@ -48,6 +51,9 @@ class BookStoreApp extends StatelessWidget {
         ChangeNotifierProvider(
           create: (BuildContext context) => Categories(),
         ),
+        ChangeNotifierProvider(
+          create: (BuildContext context) => MenuAppController(),
+        ),
         StreamProvider<ConnectivityStatus?>(
           create: (BuildContext context) =>
               ConnectivityService().connectionStatusController.stream,
@@ -56,6 +62,12 @@ class BookStoreApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        theme: ThemeData.dark().copyWith(
+          scaffoldBackgroundColor: bgColor,
+          textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
+              .apply(bodyColor: Colors.white),
+          canvasColor: secondaryColor,
+        ),
         // THIS SCREEN IS DISPLAYED FIRST ONCE THE APPLICATION LOADS COMPLETELY
         initialRoute: SplashScreen.routeName,
         // USING OF NAMED ROUTE FOR NAVIGATING BETWEEN SCREENS
@@ -68,6 +80,7 @@ class BookStoreApp extends StatelessWidget {
           PaidBookScreen.routeName: (context) => const PaidBookScreen(),
           FreeBookScreen.routeName: (context) => const FreeBookScreen(),
           AdminPanelScreen.routeName: (context) => const AdminPanelScreen(),
+          // AdminPanelScreen.routeName: (context) => const AdminPanelScreen(),
           OnBoardingScreen.routeName: (context) => const OnBoardingScreen(),
           HomeScreen.routeName: (context) => const HomeScreen(),
           SplashScreen.routeName: (context) => const SplashScreen(),

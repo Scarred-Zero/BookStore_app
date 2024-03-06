@@ -1,10 +1,10 @@
 import 'dart:math';
 import 'package:bookstore_app/providers/books.dart';
-import 'package:bookstore_app/screens/admin_panel_screen.dart';
 import 'package:bookstore_app/screens/wish_list_screen.dart';
 import 'package:bookstore_app/screens/free_book_screen.dart';
 import 'package:bookstore_app/screens/home_screen.dart';
 import 'package:bookstore_app/screens/paid_screen.dart';
+import 'package:bookstore_app/screens/admin/admin_panel_screen.dart';
 import 'package:bookstore_app/screens/search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';

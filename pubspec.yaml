@@ -37,6 +37,8 @@ dependencies:
   share: any
   connectivity: any
   path: any
+  modal_progress_hud_nsn: ^0.5.1
+  firebase_auth: ^4.16.0
 
 dev_dependencies:
   flutter_test:
@@ -44,6 +46,7 @@ dev_dependencies:
 
 
   flutter_lints: ^3.0.0
+  firebase_core: ^2.24.2
 
 flutter:
 
