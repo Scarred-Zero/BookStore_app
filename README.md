@@ -81,6 +81,9 @@ The following emails have been added as collaborators to the project:
 - [meze82778@gmail.com](#collaborators)
 - [abahojomacynthia@gmail.com](#collaborators)
 - [danemmanuel441@gmail.com](#collaborators)
+- [dodickson67@gmail.com](#collaborators)
+- [Ibehcharlton5@gmail.com](#collaborators)
+- [amy1234obetta@gmail.com](#collaborators)
 
 
 ## Installation
